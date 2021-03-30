@@ -1,0 +1,38 @@
+.botones {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 10px;
+    padding-left: 45px;
+    padding-right: 600px;
+}
+.agregar, .eliminar, .editar, .horarios, .historias {
+    font-size: larger;
+    font-weight: 400;
+    text-decoration: none;
+    color: #030303;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    word-spacing: 4px;
+}
+.agregar:hover, .eliminar:hover, .editar:hover, .historias:hover, .horarios:hover {
+    background:#000;
+    color: #fff;
+}
+.search {
+    margin-bottom: 10px;
+}
+.guardar {
+    font-size: larger;
+    font-weight: 400;
+    background-color: #fff;
+    color: #030303;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;   
+}
+.guardar:hover {
+    background-color: #000;
+    color: #fff;
+}

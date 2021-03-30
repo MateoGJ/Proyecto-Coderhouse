@@ -1,0 +1,55 @@
+.false-navbar {
+    background-color: #f4f7f7;
+    padding: 53px 0px;
+}
+
+
+.navbar-container {
+    font-size: medium;
+    height: 90px auto;
+    width: auto;
+    font-weight: 600;
+    /* background-color: #eaffd0; */
+    background-color: #f4f7f7;
+    
+}
+
+.menu {
+
+    font-size: large;
+    font-weight: 600;
+    /* background-color: #eaffd0; */
+    background-color: #f4f7f7;
+}
+
+.logo {
+    width: 80.52px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-self: start;
+
+}
+
+.Inicio,
+.turnero,
+.pacientes,
+.profesionales,
+.facturacion,
+.contacto {
+    font-weight: bold;
+    color: #272525;
+    padding: 10px;
+}
+
+.Inicio:hover,
+.turnero:hover,
+.pacientes:hover,
+.profesionales:hover,
+.facturacion:hover,
+.contacto:hover {
+    color: #fff;
+    background-color: rgb(143, 140, 140);
+    border-radius: 6%;
+}

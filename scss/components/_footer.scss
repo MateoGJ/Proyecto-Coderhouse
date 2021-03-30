@@ -1,0 +1,35 @@
+.footer {
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    margin-bottom: 0;
+    font-size: large;
+    /* background-color: #1b4332; */
+    background-color: #40514e;
+
+}
+.span {
+    text-align: center;
+}
+.cuenta-random:hover {
+    color: #ffffff;
+}
+.cuenta-random {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.inicio {
+    background-color: transparent;
+    padding: .375rem .75rem;
+    border: 1px solid #000;
+    font-weight: 600;
+    text-decoration:none;
+    color: #030303;
+}
+.inicio:hover {
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    color: #000;
+    transition: all 0.5s;
+}

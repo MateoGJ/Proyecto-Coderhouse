@@ -1,0 +1,45 @@
+$laptop:1200px;
+$laptop:992px;
+$tablet:768px;
+$phone:480px;
+
+.demostracion, .ubicacion {
+    background: white;
+    padding: 10px;
+    margin:0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.video-tutorial, .ubicacion-img  {
+    padding: 20px;
+    border-radius: 30px;
+}
+.paragraph-2 {
+    font-size:largeR;
+    text-align: center;
+    font-weight: 400;
+    color: #030303;
+
+}
+.paragraph-3 {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 800;
+    color: #030303;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.direccion {
+    font-size: larger;
+    text-align: center;
+    font-weight: 400;
+    color: #030303;
+    @media (min-width:$tablet) {
+        display: inline-block;
+    }
+}
