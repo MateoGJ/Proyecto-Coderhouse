@@ -1,3 +1,8 @@
+$laptop:1200px;
+$laptop:992px;
+$tablet:768px;
+$phone:480px;
+
 .false-navbar {
     background-color: #f4f7f7;
     padding: 53px 0px;
@@ -51,5 +56,8 @@
 .contacto:hover {
     color: #fff;
     background-color: rgb(143, 140, 140);
-    border-radius: 6%;
+    border-radius: 3%;
+    @media screen and (max-width:$tablet) {
+        border-radius: 0;
+    }
 }

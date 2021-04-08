@@ -2,7 +2,7 @@
     padding-left: 40px;
     padding-bottom: 20px;
     padding-top: 30px;
-    margin-bottom: 0;
+    margin-top: 20px;
     font-size: large;
     /* background-color: #1b4332; */
     background-color: #40514e;
@@ -13,6 +13,7 @@
 }
 .cuenta-random:hover {
     color: #ffffff;
+    text-decoration: none;
 }
 .cuenta-random {
     display: block;
@@ -32,4 +33,5 @@
     border: 1px solid transparent;
     color: #000;
     transition: all 0.5s;
+    text-decoration: none;
 }
