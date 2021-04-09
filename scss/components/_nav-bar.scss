@@ -5,17 +5,14 @@ $phone:480px;
 
 .false-navbar {
     background-color: #f4f7f7;
-    padding: 53px 0px;
+    padding: 48px 0px;
 }
 
 
-.navbar-container {
-    font-size: medium;
-    height: 90px auto;
-    width: auto;
-    font-weight: 600;
-    /* background-color: #eaffd0; */
-    background-color: #f4f7f7;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
     
 }
 
@@ -34,7 +31,6 @@ $phone:480px;
 .navbar-nav {
     display: flex;
     justify-self: start;
-
 }
 
 .Inicio,
@@ -46,6 +42,7 @@ $phone:480px;
     font-weight: bold;
     color: #272525;
     padding: 10px;
+    
 }
 
 .Inicio:hover,
