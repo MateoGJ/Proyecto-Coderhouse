@@ -29,27 +29,30 @@ h3 {
 .card-grupo {
     margin: 50px;
 
-    @media screen and (max-width:$phone) {
-        margin: 30px 10px;
+    .card {
+        @media (max-width:$tablet) {
+            margin-left: 0;
+            margin-right: 0;
+            flex: 1 0 48%;
+        }
     }
 
-}
+    .caja-1,
+    .caja-3,
+    .caja-2 {
+        font-size: 15px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 20px;
+    }
 
-.caja-1,
-.caja-3,
-.caja-2 {
-    font-size: 15px;
-    font-weight: 400;
-    color: #ffffff;
-    border-radius: 20px;
-    padding: 20px;
-}
+    .caja-1,
+    .caja-3 {
+        background-color: #1d92c0;
+    }
 
-.caja-1,
-.caja-3 {
-    background-color: #1d92c0;
-}
-
-.caja-2 {
-    background-color: #0c88b9;
+    .caja-2 {
+        background-color: #0c88b9;
+    }
 }

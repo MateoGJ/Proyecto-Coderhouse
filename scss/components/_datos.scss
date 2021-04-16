@@ -52,7 +52,7 @@ $phone:480px;
         
     
         thead tr {
-            background-color: $color4;
+            background-color: $color2;
             color: #fff;
             text-align: left;
             font-weight: bold;
@@ -71,10 +71,10 @@ $phone:480px;
             background-color: #e5e2e2;
         }
         tbody tr:last-of-type {
-            border-bottom: 2px solid $color4;
+            border-bottom: 2px solid $color2;
         }
         tbody tr:hover {
-            background-color: rgb(57, 97, 100);
+            background-color: $color3;
             color: #fff;
         }
     }

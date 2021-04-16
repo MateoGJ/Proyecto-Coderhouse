@@ -13,15 +13,24 @@ h1 {
     margin-top: 40px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    @media screen and (max-width:$tablet) {
+        display: inline-block;
+    }
+    
+    .paragraph-2 {
+        font-size:largeR;
+        text-align: center;
+        font-weight: 400;
+        color: #030303;
+        align-items: center;
+        
+    }
+    .video-tutorial {
+        @media screen and (min-width:$tablet) and (min-width:$phone) {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+    }
 }
-.video-tutorial {
-    padding: 20px;
-}
-.paragraph-2 {
-    font-size:largeR;
-    text-align: center;
-    font-weight: 400;
-    color: #030303;
 
-}

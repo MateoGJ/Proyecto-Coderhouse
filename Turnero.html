@@ -43,11 +43,57 @@
             <a class="turnero nav-item nav-link" href="Turnero.html">Turnero</a>
             <a class="pacientes nav-item nav-link" href="Pacientes.html">Pacientes</a>
             <a class="profesionales nav-item nav-link" href="Profesionales.html">Profesionales</a>
-            <a class="contacto nav-item nav-link" href="#Contacto">Contacto</a>
+            <a class="contacto nav-item nav-link" href="" data-toggle="modal"
+              data-target="#exampleModalCentered">Contacto</a>
           </div>
         </div>
       </div>
     </nav>
+    <div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenteredLabel">Contácto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Nombre</span>
+              <input type="text" class="form-control" placeholder="Mariana" aria-label="Mariana"
+                aria-describedby="basic-addon4">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Apellido</span>
+              <input type="text" class="form-control" placeholder="Juarez" aria-label="Juarez"
+                aria-describedby="basic-addon4">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Email</span>
+              <input type="Email" class="form-control" placeholder="tucorreo@gmail.com" aria-label="tucorreo@gmail.com"
+                aria-describedby="basic-addon4">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Telefono</span>
+              <input type="number" class="form-control" placeholder="3543555666" aria-label="3543555666"
+                aria-describedby="basic-addon4">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Motivo</span>
+              <textarea id="comment" name="comment" class="form-control cuentaCaracteres" rows="3" maxlength="254"
+                placeholder="Cuentanos porque te contactas"></textarea>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="guardar btn btn-info" data-dismiss="modal">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   </header>
@@ -57,7 +103,7 @@
     <div class="container table-container shadow-lg">
       <div class="menu-table">
         <div>
-          <a href="Agregar-paciente.html" class="agregar btn btn-outline-info" data-toggle="modal"
+          <a href="" class="agregar btn btn-outline-info" data-toggle="modal"
             data-target="#exampleModalCentered">Agregar Turno</a>
         </div>
         <div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog"
