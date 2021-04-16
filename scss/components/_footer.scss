@@ -1,52 +1,79 @@
 .footer {
-    padding: 20px 10px;
-    margin-top: 20px;
+    padding: 20px;
     font-size: large;
     /* background-color: #1b4332; */
-    background-color: #40514e;
+    background-color: #9dbeb9;
 
-}
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: auto;
 
-.direccion {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    text-align: center;
-    font-size: larger;
-    font-weight: 400;
-    color: #030303;
-}
+        .nombre {
+            color: #030303;
 
-.direccion:hover {
-    color: #ffffff;
-}
+            h4 {
+                text-align: center;
+            }
 
-.cuenta-random:hover {
-    color: #ffffff;
-    text-decoration: none;
-}
+            h5 {
+                text-align: center;
+            }
+        }
 
-.cuenta-random {
-    display: block;
-    justify-self: start;
-    text-decoration: none;
-    color: black;
-}
+        .cuentas {
+            grid-column: 3/4;
 
-.inicio {
-    float: inline-end;
-    background-color: transparent;
-    padding: .375rem .75rem;
-    border: 1px solid #000;
-    font-weight: 600;
-    text-decoration: none;
-    color: #030303;
-}
+            ul {
+                list-style: none;
+            }
+        }
 
-.inicio:hover {
-    background-color: #ffffff;
-    border: 1px solid transparent;
-    color: #000;
-    transition: all 0.5s;
-    text-decoration: none;
+        .direccion {
+            text-align: center;
+            text-decoration: none;
+            font-size: larger;
+            font-weight: 400;
+            color: #212529;
+        }
+
+        .direccion:hover {
+            color: #ffffff;
+        }
+
+        .cuenta-random {
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+
+        .volver {
+            background-color: transparent;
+            padding: .375rem .75rem;
+            border: 1px solid #000;
+            display: flex;
+            justify-self: start;
+            align-self: center;
+            font-weight: 600;
+            text-decoration: none;
+            color: #030303;
+            grid-column: 3/4;
+
+            &:hover {
+                background-color: #ffffff;
+                border: 1px solid transparent;
+                color: #000;
+                transition: all 0.5s;
+                text-decoration: none;
+            }
+        }
+    }
+
+
+
+
+
 }
