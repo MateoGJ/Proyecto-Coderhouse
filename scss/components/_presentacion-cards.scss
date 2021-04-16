@@ -1,47 +1,55 @@
-.presentacion{
-    font-size:x-large;
+.presentacion {
+    font-size: x-large;
     font-weight: 400;
-    background:#fff;
+    background: #fff;
     padding: 0 100px;
     text-align: center;
+
     @media screen and (max-width:$phone) {
         padding: 5px;
     }
 
 }
+
 .titulo-presentacion {
     font-weight: 600;
 }
+
 .caja-container {
     text-align: center;
     display: flex;
     justify-content: center;
 }
+
 h3 {
     line-height: 60px;
     font-weight: 700;
 }
+
 .card-grupo {
     margin: 50px;
+
     @media screen and (max-width:$phone) {
         margin: 30px 10px;
     }
-    
+
 }
-.caja-1, .caja-3, .caja-2{
+
+.caja-1,
+.caja-3,
+.caja-2 {
     font-size: 15px;
     font-weight: 400;
     color: #ffffff;
-    /* background: #0066afd8; */
-    background: #0066af;
-    
     border-radius: 20px;
     padding: 20px;
-
 }
+
+.caja-1,
+.caja-3 {
+    background-color: #1d92c0;
+}
+
 .caja-2 {
-
-    /* background: #005e9de5; */
-    background: #005e9d;
-
+    background-color: #0c88b9;
 }

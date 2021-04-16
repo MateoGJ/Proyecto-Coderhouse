@@ -5,7 +5,6 @@
 }
 
 body {
-  /* font-family: 'Lexend Mega', sans-serif; */
   background-image: url(../imagenes/Fondocopia1.png);
   /* background-color: #52b788; */
 }
@@ -14,11 +13,10 @@ body {
   margin: 0;
 }
 
-.header-1 {
+header {
   text-align: center;
 }
-
-h1 {
+header h1 {
   text-align: center;
   font-size: 30px;
   font-weight: 800;
@@ -45,10 +43,6 @@ h1 {
   background-color: #f4f7f7;
 }
 
-.logo {
-  width: 80.52px;
-}
-
 .navbar-nav {
   display: flex;
   justify-self: start;
@@ -58,18 +52,15 @@ h1 {
 .turnero,
 .pacientes,
 .profesionales,
-.facturacion,
 .contacto {
   font-weight: bold;
   color: #272525;
   padding: 10px;
 }
-
 .Inicio:hover,
 .turnero:hover,
 .pacientes:hover,
 .profesionales:hover,
-.facturacion:hover,
 .contacto:hover {
   color: #fff;
   background-color: #8f8c8c;
@@ -80,7 +71,6 @@ h1 {
 .turnero:hover,
 .pacientes:hover,
 .profesionales:hover,
-.facturacion:hover,
 .contacto:hover {
     border-radius: 0;
   }
@@ -123,22 +113,26 @@ h3 {
   }
 }
 
-.caja-1, .caja-3, .caja-2 {
+.caja-1,
+.caja-3,
+.caja-2 {
   font-size: 15px;
   font-weight: 400;
   color: #ffffff;
-  /* background: #0066afd8; */
-  background: #0066af;
   border-radius: 20px;
   padding: 20px;
 }
 
-.caja-2 {
-  /* background: #005e9de5; */
-  background: #005e9d;
+.caja-1,
+.caja-3 {
+  background-color: #1d92c0;
 }
 
-.demostracion, .ubicacion {
+.caja-2 {
+  background-color: #0c88b9;
+}
+
+.demostracion {
   background: white;
   padding: 10px;
   margin: 0;
@@ -148,9 +142,8 @@ h3 {
   align-items: center;
 }
 
-.video-tutorial, .ubicacion-img {
+.video-tutorial {
   padding: 20px;
-  border-radius: 30px;
 }
 
 .paragraph-2 {
@@ -158,30 +151,6 @@ h3 {
   text-align: center;
   font-weight: 400;
   color: #030303;
-}
-
-.paragraph-3 {
-  display: flex;
-  justify-content: left;
-  text-align: center;
-  font-size: x-large;
-  font-weight: 800;
-  color: #030303;
-  margin: 20px auto;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.direccion {
-  font-size: larger;
-  text-align: center;
-  font-weight: 400;
-  color: #030303;
-}
-@media (min-width: 768px) {
-  .direccion {
-    display: inline-block;
-  }
 }
 
 .footer {
@@ -197,6 +166,9 @@ h3 {
   justify-content: center;
   text-decoration: none;
   text-align: center;
+  font-size: larger;
+  font-weight: 400;
+  color: #030303;
 }
 
 .direccion:hover {
@@ -257,25 +229,6 @@ h3 {
   color: #fff;
   background-color: #508f92;
   border-color: #508f92;
-}
-
-.agenda {
-  padding: 0px 20px 20px 20px;
-}
-
-.h2 {
-  text-align: left;
-  font-size: 20px;
-  font-weight: 700;
-  color: #030303;
-  background: white;
-  margin: 0px auto;
-  padding: 10px;
-}
-
-.datos {
-  margin-left: 30px;
-  margin-bottom: 20px;
 }
 
 .forms-container {

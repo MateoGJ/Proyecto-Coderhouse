@@ -6,35 +6,43 @@
     background-color: #40514e;
 
 }
+
 .direccion {
     display: flex;
     justify-content: center;
     text-decoration: none;
     text-align: center;
-    
+    font-size: larger;
+    font-weight: 400;
+    color: #030303;
 }
+
 .direccion:hover {
     color: #ffffff;
 }
+
 .cuenta-random:hover {
     color: #ffffff;
     text-decoration: none;
 }
+
 .cuenta-random {
     display: block;
     justify-self: start;
     text-decoration: none;
     color: black;
 }
+
 .inicio {
     float: inline-end;
     background-color: transparent;
     padding: .375rem .75rem;
     border: 1px solid #000;
     font-weight: 600;
-    text-decoration:none;
+    text-decoration: none;
     color: #030303;
 }
+
 .inicio:hover {
     background-color: #ffffff;
     border: 1px solid transparent;
