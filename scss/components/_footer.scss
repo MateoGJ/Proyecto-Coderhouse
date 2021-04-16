@@ -2,64 +2,76 @@
     padding: 20px;
     font-size: large;
     /* background-color: #1b4332; */
-    background-color: #9dbeb9;
+    background-color: $color2;
 
     .footer-container {
+        color: #ffffff;
         display: grid;
         grid-template-columns: repeat(3, 33%);
         grid-template-rows: auto;
 
-        .nombre {
-            color: #030303;
-
-            h4 {
-                text-align: center;
+        ul {
+            list-style: none;
+            li, a {
+                color: #ffffff;
+                
             }
-
-            h5 {
-                text-align: center;
+            li {
+                padding: 5px;
+            }
+            svg {
+                color: #ffffff;
+                &:hover {
+                    color: #000;
+                }
             }
         }
 
-        .cuentas {
+        .contact {
+            justify-self: center;
             grid-column: 3/4;
+            .cuentas {
 
-            ul {
-                list-style: none;
+                a {
+                    padding: 5px;
+                }
+                .cuenta-random {
+                    text-decoration: none;
+                    color: black;
+        
+                    &:hover {
+                        color: #ffffff;
+                        text-decoration: none;
+                    }
+                }
             }
         }
+
+        .nombre {
+            text-align: left;
+        }
+
+        
 
         .direccion {
-            text-align: center;
+            color: #ffffff;
             text-decoration: none;
             font-size: larger;
             font-weight: 400;
-            color: #212529;
-        }
-
-        .direccion:hover {
-            color: #ffffff;
-        }
-
-        .cuenta-random {
-            text-decoration: none;
-            color: black;
             &:hover {
-                color: #ffffff;
-                text-decoration: none;
+                color: #000;
             }
         }
 
         .volver {
             background-color: transparent;
             padding: .375rem .75rem;
-            border: 1px solid #000;
+            border: 1px solid #ffffff;
             display: flex;
-            justify-self: start;
+            justify-self: center;
             align-self: center;
             font-weight: 600;
             text-decoration: none;
-            color: #030303;
             grid-column: 3/4;
 
             &:hover {

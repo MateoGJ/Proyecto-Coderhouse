@@ -5,7 +5,7 @@
 }
 
 main {
-  background-image: url(../imagenes/Fondocopia1.png);
+  background-color: #a2d4d8;
   padding-bottom: 20px;
 }
 
@@ -13,26 +13,18 @@ main {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .false-navbar {
   background-color: #f4f7f7;
   padding: 48px 0px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu {
-  font-size: large;
-  font-weight: 600;
-  /* background-color: #eaffd0; */
-  background-color: #f4f7f7;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-self: start;
+.bg-color {
+  background-color: #5ea4b6fb;
 }
 
 .Inicio,
@@ -41,7 +33,7 @@ main {
 .profesionales,
 .contacto {
   font-weight: bold;
-  color: #272525;
+  color: #fff;
   padding: 10px;
 }
 .Inicio:hover,
@@ -50,7 +42,7 @@ main {
 .profesionales:hover,
 .contacto:hover {
   color: #fff;
-  background-color: #8f8c8c;
+  background-color: #fff;
   border-radius: 3%;
 }
 @media screen and (max-width: 768px) {
@@ -153,56 +145,65 @@ h1 {
   padding: 20px;
   font-size: large;
   /* background-color: #1b4332; */
-  background-color: #9dbeb9;
+  background-color: #337391;
 }
 .footer .footer-container {
+  color: #ffffff;
   display: grid;
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: auto;
 }
-.footer .footer-container .nombre {
-  color: #030303;
-}
-.footer .footer-container .nombre h4 {
-  text-align: center;
-}
-.footer .footer-container .nombre h5 {
-  text-align: center;
-}
-.footer .footer-container .cuentas {
-  grid-column: 3/4;
-}
-.footer .footer-container .cuentas ul {
+.footer .footer-container ul {
   list-style: none;
 }
-.footer .footer-container .direccion {
-  text-align: center;
-  text-decoration: none;
-  font-size: larger;
-  font-weight: 400;
-  color: #212529;
-}
-.footer .footer-container .direccion:hover {
+.footer .footer-container ul li, .footer .footer-container ul a {
   color: #ffffff;
 }
-.footer .footer-container .cuenta-random {
+.footer .footer-container ul li {
+  padding: 5px;
+}
+.footer .footer-container ul svg {
+  color: #ffffff;
+}
+.footer .footer-container ul svg:hover {
+  color: #000;
+}
+.footer .footer-container .contact {
+  justify-self: center;
+  grid-column: 3/4;
+}
+.footer .footer-container .contact .cuentas a {
+  padding: 5px;
+}
+.footer .footer-container .contact .cuentas .cuenta-random {
   text-decoration: none;
   color: black;
 }
-.footer .footer-container .cuenta-random:hover {
+.footer .footer-container .contact .cuentas .cuenta-random:hover {
   color: #ffffff;
   text-decoration: none;
+}
+.footer .footer-container .nombre {
+  text-align: left;
+}
+.footer .footer-container .direccion {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 400;
+}
+.footer .footer-container .direccion:hover {
+  color: #000;
 }
 .footer .footer-container .volver {
   background-color: transparent;
   padding: 0.375rem 0.75rem;
-  border: 1px solid #000;
+  border: 1px solid #ffffff;
   display: flex;
-  justify-self: start;
+  justify-self: center;
   align-self: center;
   font-weight: 600;
   text-decoration: none;
-  color: #030303;
   grid-column: 3/4;
 }
 .footer .footer-container .volver:hover {
@@ -282,7 +283,7 @@ h1 {
   overflow: hidden;
 }
 .table-container .table-content thead tr {
-  background-color: #276075;
+  background-color: #a2d4d8;
   color: #fff;
   text-align: left;
   font-weight: bold;
@@ -300,7 +301,7 @@ h1 {
   background-color: #e5e2e2;
 }
 .table-container .table-content tbody tr:last-of-type {
-  border-bottom: 2px solid #276075;
+  border-bottom: 2px solid #a2d4d8;
 }
 .table-container .table-content tbody tr:hover {
   background-color: #396164;

@@ -2,7 +2,8 @@ $laptop:1200px;
 $laptop:992px;
 $tablet:768px;
 $phone:480px;
-$color-table: #276075; 
+
+
 
 
 
@@ -51,7 +52,7 @@ $color-table: #276075;
         
     
         thead tr {
-            background-color: $color-table;
+            background-color: $color4;
             color: #fff;
             text-align: left;
             font-weight: bold;
@@ -70,7 +71,7 @@ $color-table: #276075;
             background-color: #e5e2e2;
         }
         tbody tr:last-of-type {
-            border-bottom: 2px solid $color-table;
+            border-bottom: 2px solid $color4;
         }
         tbody tr:hover {
             background-color: rgb(57, 97, 100);

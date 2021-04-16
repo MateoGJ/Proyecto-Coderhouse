@@ -2,23 +2,8 @@
     background-color: #f4f7f7;
     padding: 48px 0px;
 }
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu {
-
-    font-size: large;
-    font-weight: 600;
-    /* background-color: #eaffd0; */
-    background-color: #f4f7f7;
-}
-
-.navbar-nav {
-    display: flex;
-    justify-self: start;
+.bg-color {
+    background-color: $color3;
 }
 
 .Inicio,
@@ -27,12 +12,12 @@
 .profesionales,
 .contacto {
     font-weight: bold;
-    color: #272525;
+    color: #fff;
     padding: 10px;
 
     &:hover {
         color: #fff;
-        background-color: rgb(143, 140, 140);
+        background-color: #fff;
         border-radius: 3%;
 
         @media screen and (max-width:$tablet) {
