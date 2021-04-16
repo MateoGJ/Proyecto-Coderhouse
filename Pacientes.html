@@ -52,11 +52,11 @@
     <div class="container table-container shadow-lg">
       <div class="menu-table">
         <div>
-          <a href="Agregar-paciente.html" class="btn btn-outline-success">Agregar Paciente</a>
+          <a href="Agregar-paciente.html" class="agregar btn btn-outline-info">Agregar Paciente</a>
         </div>
         <div>
           <div class="input-group rounded">
-            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+            <input type="search" class="form-control rounded" placeholder="Buscar" aria-label="Search"
               aria-describedby="search-addon" />
             <span class="input-group-text border-0" id="search-addon">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -218,7 +218,7 @@
       <div class="btn-group" role="group" aria-label="Basic example">
         <a href="" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCentered">Eliminar</a>
         <a href="" class="btn btn-secondary">Editar</a>
-        <a href="" class="btn btn-secondary">Agregar turno</a>
+        <a href="" class="btn btn-secondary" data-toggle="modal" data-target="#turno">Agregar turno</a>
       </div>
       <div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -235,7 +235,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">No, lo siento :(</button>
-              <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#Seguro">Si, no molestes</button>
+              <button type="button" class="guardar btn btn-info" data-dismiss="modal" data-toggle="modal" data-target="#Seguro">Si, no molestes</button>
             </div>
           </div>
         </div>
@@ -255,11 +255,51 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Bueno, no</button>
-              <button type="button" class="btn btn-primary">Que sii</button>
+              <button type="button" class="guardar btn btn-info" data-dismiss="modal">Que sii</button>
             </div>
           </div>
         </div>
       </div>
+      <div class="modal" id="turno" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenteredLabel">Agregar turno</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Fecha</span>
+                  <input type="date" class="form-control" placeholder="Fecha de nacimiento"
+                    aria-label="Fecha de nacimiento" aria-describedby="basic-addon4">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Hora</span>
+                  <input type="time" class="form-control" placeholder="Fecha de nacimiento"
+                    aria-label="Fecha de nacimiento" aria-describedby="basic-addon4">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Duración</span>
+                  <input type="number" class="form-control" placeholder="minutos" aria-label="Fecha de nacimiento"
+                    aria-describedby="basic-addon4">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Motivo</span>
+                  <textarea id="comment" name="comment" class="form-control cuentaCaracteres" rows="3"
+                    maxlength="254"></textarea>
+                </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="guardar btn btn-info" data-dismiss="modal">Guardar</button>
+              </div>
+            </div>
+          </div>
+        </div>
  
 
     </div>

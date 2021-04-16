@@ -2,6 +2,7 @@ $laptop:1200px;
 $laptop:992px;
 $tablet:768px;
 $phone:480px;
+$color-table: #276075; 
 
 .agenda {
     padding: 0px 20px 20px 20px;
@@ -31,7 +32,7 @@ $phone:480px;
         font-size: small;
     }
 }
-$color-table: #141414; 
+
 
 .table-container {
     background-color: #f8f5f1;
@@ -90,7 +91,7 @@ $color-table: #141414;
             border-bottom: 2px solid $color-table;
         }
         tbody tr:hover {
-            background-color: rgb(51, 51, 51);
+            background-color: rgb(57, 97, 100);
             color: #fff;
         }
     }

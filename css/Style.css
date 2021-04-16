@@ -185,17 +185,22 @@ h3 {
 }
 
 .footer {
-  padding-left: 40px;
-  padding-bottom: 20px;
-  padding-top: 30px;
+  padding: 20px 10px;
   margin-top: 20px;
   font-size: large;
   /* background-color: #1b4332; */
   background-color: #40514e;
 }
 
-.span {
+.direccion {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
   text-align: center;
+}
+
+.direccion:hover {
+  color: #ffffff;
 }
 
 .cuenta-random:hover {
@@ -205,11 +210,13 @@ h3 {
 
 .cuenta-random {
   display: block;
+  justify-self: start;
   text-decoration: none;
   color: black;
 }
 
 .inicio {
+  float: inline-end;
   background-color: transparent;
   padding: 0.375rem 0.75rem;
   border: 1px solid #000;
@@ -231,18 +238,25 @@ h3 {
 }
 
 .guardar {
-  font-size: larger;
-  font-weight: 400;
-  background-color: #fff;
-  color: #030303;
-  border: 1px solid #000;
-  padding: 10px;
-  border-radius: 5px;
+  color: #fff;
+  border-color: #508f92;
+  background-color: #508f92;
+  transition: color 0.15s;
+}
+.guardar:hover {
+  background-color: #477f82;
+  border-color: #508f92;
 }
 
-.guardar:hover {
-  background-color: #000;
+.agregar {
+  color: #508f92;
+  border-color: #508f92;
+  transition: color 0.15s;
+}
+.agregar:hover {
   color: #fff;
+  background-color: #508f92;
+  border-color: #508f92;
 }
 
 .agenda {
@@ -307,7 +321,7 @@ h3 {
   overflow: hidden;
 }
 .table-container .table-content thead tr {
-  background-color: #141414;
+  background-color: #276075;
   color: #fff;
   text-align: left;
   font-weight: bold;
@@ -325,10 +339,10 @@ h3 {
   background-color: #e5e2e2;
 }
 .table-container .table-content tbody tr:last-of-type {
-  border-bottom: 2px solid #141414;
+  border-bottom: 2px solid #276075;
 }
 .table-container .table-content tbody tr:hover {
-  background-color: #333333;
+  background-color: #396164;
   color: #fff;
 }
 
