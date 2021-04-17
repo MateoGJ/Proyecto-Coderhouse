@@ -5,7 +5,7 @@
 }
 
 main {
-  background-color: #a2d4d8;
+  background-color: #abe2e6;
   padding-bottom: 20px;
 }
 
@@ -15,7 +15,6 @@ main {
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
 .false-navbar {
@@ -24,7 +23,7 @@ a {
 }
 
 .bg-color {
-  background-color: #5ea4b6fb;
+  background-color: #6db6c9fb;
 }
 
 .Inicio,
@@ -261,7 +260,7 @@ h1 {
 }
 .guardar:hover {
   background-color: #4da7a7;
-  border-color: #a2d4d8;
+  border-color: #abe2e6;
 }
 
 .agregar {
@@ -339,7 +338,7 @@ h1 {
   border-bottom: 2px solid #337391;
 }
 .table-container .table-content tbody tr:hover {
-  background-color: #5ea4b6fb;
+  background-color: #6db6c9fb;
   color: #fff;
 }
 
