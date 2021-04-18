@@ -191,6 +191,20 @@ h1 {
     grid-column: 1/3;
     grid-row: 3/4;
     justify-self: start;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer .footer-container .contact .mail {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer .footer-container .contact li {
+    display: block;
+    align-self: flex-start;
   }
 }
 .footer .footer-container .contact .cuentas a {
