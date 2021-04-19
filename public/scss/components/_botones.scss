@@ -1,0 +1,30 @@
+
+
+.search {
+    margin-bottom: 10px;
+}
+
+.guardar {
+    color: #fff;
+    border-color: $color1;
+    background-color: $color1;
+    transition: color .15s;
+
+    &:hover {
+        background-color: darken($color1, 5%);
+        border-color: $color4;
+    }
+}
+
+.agregar {
+    color: $color6;
+    border-color: $color6;
+    transition: color .15s;
+
+    &:hover {
+        color: #fff;
+        background-color: $color1;
+        border-color: $color1;
+    }
+
+}

@@ -3,21 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="keywords" content="Pediatría, Centro Médico, Administración clínica, Gestión Clínica">
-  <meta name="description" content="Centro Médico pediátrico y adultos / Gestión de servicios clínicos">
+  <meta name="keywords"
+    content="Pediatría, Centro Médico, Administración clínica, Gestión Clínica, Agenda, Turnos, Agregar turno, Pedir turno">
+  <meta name="description"
+    content="Centro Médico pediátrico y adultos / Gestión de servicios clínicos / Registro de turnos del día">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2? family = Merriweather: wght @ 300 & display = swap"
     rel="hoja de estilo">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic" rel="stylesheet" type="text/css">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="imagenes/Logo.png" type="image/x-icon">
-  <title>C.E.P.A • Centro de Especialidades Pediátricas y Adultos</title>
+  <title>Turnero • Centro de Especialidades Pediátricas y Adultos</title>
 </head>
 
 <body>
@@ -95,64 +96,213 @@
     </div>
 
 
-
   </header>
   <main>
-    <div class="container">
-      <h1>Centro HOLA de Especialidades Pediátricas y Adultos</h1>
-      <div class="presentacion pr-5 pl-5 justify-content-center shadow-lg">
-        <p>Nuestro propio sitio web, donde facilitaremos el acceso a
-          nuestros servicios como centro medico.</p>
-      </div>
-      <div class="card-grupo">
-        <div class="card-group pr-5 pl-5">
-          <div class="card text-white caja-1">
-            <div class="card-body">
-              <h4 class="card-title">Multi-dispositivo:</h4>
-              <p class="card-text">Podés acceder desde todos tus dispositivos desde la web, sin necesidad de instalar
-                ninguna aplicación.</p>
+    <h1>Turnero</h1>
+
+    <div class="container table-container shadow-lg">
+      <div class="menu-table">
+        <div>
+          <a href="" class="agregar btn btn-outline-info" data-toggle="modal"
+            data-target="#exampleModalCentered">Agregar Turno</a>
+        </div>
+        <div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenteredLabel">Agregar turno</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Fecha</span>
+                  <input type="date" class="form-control" placeholder="Fecha de nacimiento"
+                    aria-label="Fecha de nacimiento" aria-describedby="basic-addon4">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Hora</span>
+                  <input type="time" class="form-control" placeholder="Fecha de nacimiento"
+                    aria-label="Fecha de nacimiento" aria-describedby="basic-addon4">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Duración</span>
+                  <input type="number" class="form-control" placeholder="minutos" aria-label="Fecha de nacimiento"
+                    aria-describedby="basic-addon4">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Motivo</span>
+                  <textarea id="comment" name="comment" class="form-control cuentaCaracteres" rows="3"
+                    maxlength="254"></textarea>
+                </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="guardar btn btn-info" data-dismiss="modal">Guardar</button>
+              </div>
             </div>
           </div>
-          <div class="card text-white caja-2">
-            <div class="card-body">
-              <h4 class="card-title">Segura:</h4>
-              <p class="card-text">Garantizamos la confidencialidad y privacidad de la información que ingreses de tus
-                pacientes, sin dejar
-                rastros de los datos en el dispositivo que utilices.</p>
-            </div>
-          </div>
-          <div class="card text-white caja-3">
-            <div class="card-body">
-              <h4 class="card-title">Confidencial:</h4>
-              <p class="card-text">Este sitio es una herramienta que custodia la información privada de sus pacientes de
-                manera confidencial.</p>
-            </div>
+        </div>
+        <div>
+          <div class="input-group rounded">
+            <input type="search" class="form-control rounded" placeholder="Buscar" aria-label="Search"
+              aria-describedby="search-addon" />
+            <span class="input-group-text border-0" id="search-addon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+            </span>
           </div>
         </div>
       </div>
-
-      <div class="demostracion container">
-        <div class="video-tutorial embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item img-fluid" width="360" height="115"
-            src="https://player.vimeo.com/video/388521562" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+      <div class="calendar shadow bg-white p-5">
+        <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
+          <h2 class="month font-weight-bold mb-0 text-uppercase">Abril 2021</h2>
         </div>
+        <p class="font-italic text-muted mb-5">No hay eventos para hoy.</p>
+        <ol class="day-names list-unstyled">
+          <li class="font-weight-bold text-uppercase">Dom</li>
+          <li class="font-weight-bold text-uppercase">Lun</li>
+          <li class="font-weight-bold text-uppercase">Mar</li>
+          <li class="font-weight-bold text-uppercase">Mier</li>
+          <li class="font-weight-bold text-uppercase">Jue</li>
+          <li class="font-weight-bold text-uppercase">Vie</li>
+          <li class="font-weight-bold text-uppercase">Sab</li>
+        </ol>
 
-        <div class="paragraph-2">
-          <h3>Demostración:</h3>
-          <p>Un pequeño video-tutorial de como funciona nuestro sitio.</p>
-        </div>
-
+        <ol class="days list-unstyled">
+          <li>
+            <div class="date">1</div>
+            <div class="event bg-success">Psicología</div>
+          </li>
+          <li>
+            <div class="date">2</div>
+          </li>
+          <li>
+            <div class="date">3</div>
+          </li>
+          <li>
+            <div class="date">4</div>
+          </li>
+          <li>
+            <div class="date">5</div>
+          </li>
+          <li>
+            <div class="date">6</div>
+          </li>
+          <li>
+            <div class="date">7</div>
+          </li>
+          <li>
+            <div class="date">8</div>
+          </li>
+          <li>
+            <div class="date">9</div>
+          </li>
+          <li>
+            <div class="date">10</div>
+          </li>
+          <li>
+            <div class="date">11</div>
+          </li>
+          <li>
+            <div class="date">12</div>
+          </li>
+          <li>
+            <div class="date">13</div>
+            <div class="event all-day begin bg-warning">Quinesiología</div>
+          </li>
+          <li>
+            <div class="date">14</div>
+          </li>
+          <li>
+            <div class="date">15</div>
+            <div class="event all-day end bg-success">Pediatría</div>
+          </li>
+          <li>
+            <div class="date">16</div>
+          </li>
+          <li>
+            <div class="date">17</div>
+          </li>
+          <li>
+            <div class="date">18</div>
+          </li>
+          <li>
+            <div class="date">19</div>
+          </li>
+          <li>
+            <div class="date">20</div>
+          </li>
+          <li>
+            <div class="date">21</div>
+            <div class="event bg-primary">Laboratorio</div>
+            <div class="event bg-success">Traumatología</div>
+          </li>
+          <li>
+            <div class="date">22</div>
+            <div class="event bg-info">12:40 Odontología</div>
+          </li>
+          <li>
+            <div class="date">23</div>
+          </li>
+          <li>
+            <div class="date">24</div>
+          </li>
+          <li>
+            <div class="date">25</div>
+          </li>
+          <li>
+            <div class="date">26</div>
+          </li>
+          <li>
+            <div class="date">27</div>
+          </li>
+          <li>
+            <div class="date">28</div>
+          </li>
+          <li>
+            <div class="date">29</div>
+          </li>
+          <li>
+            <div class="date">30</div>
+          </li>
+          <li>
+            <div class="date">31</div>
+          </li>
+          <li class="outside">
+            <div class="date">1</div>
+          </li>
+          <li class="outside">
+            <div class="date">2</div>
+          </li>
+          <li class="outside">
+            <div class="date">3</div>
+          </li>
+          <li class="outside">
+            <div class="date">4</div>
+          </li>
+        </ol>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <a href="" class="btn btn-secondary">Eliminar</a>
+        <a href="" class="btn btn-secondary">Editar</a>
       </div>
     </div>
+
+
+
   </main>
   <footer class=footer>
     <div class="container footer-container">
       <div class="nombre">
         <h4>C.E.P.A</h4>
-        <h5>Centro de Especialidades Pediátricas y Adultos</h5>
+        <h5>Centro de Especialidades Pediatricas y Adultos</h5>
       </div>
       <ul class="contact">
         <li>
@@ -184,7 +334,7 @@
           </div>
         </li>
         <li>
-          <a class="mail" href="mailto:mateo10@gmail.com">Info@cepa.com</a>
+          <a href="mailto:mateo10@gmail.com">Info@cepa.com</a>
         </li>
         <li>
           <p>3543451066</p>
@@ -196,9 +346,13 @@
       <a href="#Inicio" type="button" class="volver btn btn-outline-light">Volver arriba</a>
     </div>
   </footer>
- 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
+  </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
@@ -208,8 +362,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
   </script>
-
-
 
 </body>
 

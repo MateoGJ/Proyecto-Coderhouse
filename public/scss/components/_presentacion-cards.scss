@@ -1,0 +1,58 @@
+.presentacion {
+    font-size: x-large;
+    font-weight: 400;
+    background: #fff;
+    padding: 0 100px;
+    text-align: center;
+
+    @media screen and (max-width:$phone) {
+        padding: 5px;
+    }
+
+}
+
+.titulo-presentacion {
+    font-weight: 600;
+}
+
+.caja-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.card-grupo {
+    margin: 50px;
+
+    .card {
+        @media (max-width:$tablet) {
+            margin-left: 0;
+            margin-right: 0;
+            flex: 1 0 48%;
+        }
+    }
+
+    .caja-1,
+    .caja-3,
+    .caja-2 {
+        font-size: 15px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .caja-1,
+    .caja-3 {
+        background-color: #2f9cb8;
+    }
+
+    .caja-2 {
+        background-color: #29a5c4;
+    }
+}

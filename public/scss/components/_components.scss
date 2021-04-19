@@ -1,0 +1,20 @@
+$laptop:1200px;
+$laptop:992px;
+$tablet:768px;
+$phone:480px;
+$color1: #5bb3b3;
+$color2: #337391;
+$color3: #6db6c9fb;
+$color4: #abe2e6;
+$color5: #b6edec;
+$color6: #438080;
+
+@import 'body';
+@import 'header';
+@import 'nav-bar';
+@import 'presentacion-cards';
+@import 'principal';
+@import 'footer';
+@import 'botones';
+@import 'datos';
+@import 'turnero';

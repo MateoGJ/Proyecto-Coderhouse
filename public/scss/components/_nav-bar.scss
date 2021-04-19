@@ -1,0 +1,28 @@
+.false-navbar {
+    background-color: #f4f7f7;
+    padding: 48px 0px;
+}
+.bg-color {
+    background-color: $color3;
+}
+
+.Inicio,
+.turnero,
+.pacientes,
+.profesionales,
+.contacto {
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+
+    &:hover {
+        color: #fff;
+        background-color: #fff;
+        border-radius: 3%;
+
+        @media screen and (max-width:$tablet) {
+            border-radius: 0;
+        }
+    }
+
+}
